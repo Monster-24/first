@@ -16,6 +16,7 @@ sql="INSERT INTO {table}({keys}) VALUES ({values})".format(table=table,keys=keys
 try:
     if cursor.execute(sql,tuple(data.values())):
         print('successful')
+        print('github')
         db.commit()
 except:
     print('failed')
